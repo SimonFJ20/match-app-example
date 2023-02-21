@@ -4,11 +4,10 @@
         "module": "es6",
         "moduleResolution": "node",
         "skipLibCheck": true,
-        "lib": ["es6"],
+        "lib": ["es6", "dom"],
         "strict": true,
         "pretty": true,
-        "outDir": "./build",
-        "inlineSourceMap": true,
+        "noEmit": true
     },
-    "include": ["./src/**/*.ts"]
+    "include": ["./web/**/*.ts"]
 }
