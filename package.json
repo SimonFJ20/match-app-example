@@ -1,0 +1,21 @@
+{
+    "name": "match-app-example",
+    "version": "1.0.0",
+    "main": "build/main.js",
+    "license": "MIT",
+    "scripts":  {
+        "build": "npm run server-build && npm run web-build",
+        "server-build": "tsc -p src/tsconfig.json",
+        "server-watch": "tsc -p src/tsconfig.json --watch",
+        "server-check": "tsc -p src/tsconfig.json --noEmit",
+        "web-build": "esbuild web/main.ts --outfile=public/bundle.js --minify --sourcemap --bundle",
+        "web-watch": "esbuild web/main.ts --outfile=public/bundle.js --minify --sourcemap --bundle --watch",
+        "web-check": "tsc -p web/tsconfig.json --noEmit"
+    },
+    "dependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^18.14.0",
+        "express": "^4.18.2",
+        "typescript": "^4.9.5"
+    }
+}
