@@ -7,7 +7,8 @@
         "lib": ["es6", "dom"],
         "strict": true,
         "pretty": true,
-        "noEmit": true
+        "noEmit": true,
+        "forceConsistentCasingInFileNames": true
     },
-    "include": ["./web/**/*.ts"]
+    "include": ["./**/*.ts"]
 }
